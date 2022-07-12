@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resume.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/baseAPI.js"></script>
+    <script src="./js/resume.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        form {
+            display: flex;
+            width: 1200px;
+            margin: 30px auto;
+            background-color: rgba(225,225,225,.8);
+            box-sizing: border-box;
+            padding: 100px;
+            flex-flow: wrap;
+        }
+        form div input {
+            width: 200px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid rgb(111, 107, 107);
+            background-color: transparent;
+            margin-right: 100px;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        label {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .sex,
+        .choice {
+            position: relative;
+        }
+        .sex input,
+        .choice input {
+            margin-bottom: 0;
+        }
+        .sex span,
+        .choice span{
+            position: absolute;
+            display: block;
+            top: 50px;
+            left: 180px;
+            height: 10px;
+            width: 10px;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            transform: rotate(45deg);
+        }
+        ul {
+            display: none;
+            width: 200px;
+            line-height: 30px;
+            text-align: center;
+            
+        }
+        ul li:hover {
+            background-color: rgba(225, 225, 225,.9);
+        }
+        .major input {
+            width: 250px;
+        }
+        .studentId input {
+            width: 250px;
+        }
+        textarea {
+            height: 200px;
+            width: 1000px;
+            outline: none;
+            resize: none;
+            font-size: 20px;
+            color: rgb(115, 110, 110);
+            border: 1px solid rgb(115, 110, 110);
+            background-color: transparent;
+            margin-bottom: 30px;
+        }
+        .reson {
+            display: none;
+        }
+        .title {
+            height: 50px;
+            line-height: 50px;
+        }
+        .submit {
+            position: relative;
+            left: 900px;
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 25px;
+            box-shadow: 0px 0px 5px#000;
+            background-color: rgb(70, 148, 227);
+        }
+        .update{
+            position: relative;
+            left: 660px;
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 25px;
+            box-shadow: 0px 0px 5px#000;
+            background-color: rgb(70, 148, 227);
+        }
+    </style>
+</head>
+<body>
+    <form class="form" report-submit="false" bindsubmit="" bindreset="">
+        <div class="name">
+            <label for="name">姓名</label>
+            <input type="text" placeholder="uername" class="username">
+        </div>
+        <div class="sex">
+            <label for="sex">性别</label>
+            <input type="text" disabled="true" class="usersex">
+            <span></span>
+            <ul>
+                <li>男</li>
+                <li>女</li>
+            </ul>
+        </div>
+        <div class="major">
+            <label for="major">专业年级</label>
+            <input type="text" class="usermajor">
+        </div>
+        <div class="QQ">
+            <label for="QQ">QQ</label>
+            <input type="text" class="userQQ">
+        </div>
+        <div class="choice">
+            <label for="chioce">选择组别</label>
+            <input type="text" disabled="true" class="userchoice">
+            <span></span>
+            <ul>
+                <li>IC组</li>
+                <li>嵌入式组</li>
+                <li>前端组</li>
+            </ul>
+        </div>
+        <div class="studentId">
+            <label for="studentId">学号</label>
+            <input type="text" class="userstudentId">
+        </div>
+        <div class="reason">
+            <div class="title"></div>
+            <textarea name="" id="" cols="30" rows="10" class="userreason"></textarea>
+        </div>
+        <div class="introduce">
+            <div class="title">自我介绍</div>
+            <textarea name="" id="" cols="30" rows="10" class="userintroduce"></textarea>
+        </div>
+        <div class="exprience">
+            <div class="title">获得奖项和经历</div>
+            <textarea name="" id="" cols="30" rows="10" class="userexprience"></textarea>
+        </div>
+        <button type="submit" class="submit">确定提交</button>
+        <button type="submit" class="update">修改信息</button>
+    </form>
+</body>
+</html>

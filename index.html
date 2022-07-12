@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招新首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入轮播图的css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- 引入轮播图的js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="typer">集成创新电路工作室</div>
+    <div class="main">
+        <div class="main_mask"></div>
+        <div class="main_focus">
+            <div class="main_focus_left">
+                <div class="photo">
+                    <img src="./img/photo.png" alt="">
+                    <div class="login">登录</div>
+                </div>
+                <ul class="nav">
+                    <!-- 组别介绍 -->
+                    <li class="group_induce">组别介绍
+                        <ul>
+                            <li class="ic">ic组</li>
+                            <li class="embedded">嵌入式组</li>
+                            <li class="front-end">前端组</li>
+                        </ul>
+                        <span></span>
+                    </li>
+                    <!-- 工作室奖项介绍 -->
+                    <li class="award_induce">工作室奖项</li>
+                    <!-- 学习路线介绍 -->
+                    <li class="learning-paths_induce">学习路线
+                        <ul>
+                            <li class="ic_paths">ic组</li>
+                            <li class="embedded_paths">嵌入式组</li>
+                            <li class="front-end_paths">前端组</li>
+                        </ul>
+                        <span></span>
+                    </li>
+                    <!-- 报名板块 -->
+                    <li class="registration">报名</li>
+                </ul>
+            </div>
+            <div class="main_focus_induce">
+
+            <!-- 这里是页面加载完工作室合照学习照等轮播图 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/index1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/index2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/index3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+
+            <!-- 组别信息介绍 -->
+                <div class="group_introduce">
+                    <!-- ic组介绍 -->
+                    <div class="ic_introduce">
+                        这里是ic组介绍
+                    </div>
+                    <!-- 嵌入式组介绍 -->
+                    <div class="embedded_introduce">
+                        这里是嵌入式组介绍
+                    </div>
+                    <!-- 前端组介绍 -->
+                    <div class="front-end_introduce">
+                        这里是前端组介绍
+                    </div>
+                </div>
+
+            <!-- 工作室获奖情况介绍 -->
+                <div class="award_introduce">
+                这里是工作室获奖情况介绍
+                </div>
+
+            <!-- 推荐学习路线介绍 -->
+                <div class="learning-paths_introduce">
+                <div class="ic_learning-paths">
+                    ic学习路线
+                </div>
+                <div class="embedded_learning-paths">
+                    嵌入式学习路线
+                </div>
+                <div class="front-end_learning-paths">
+                    前端学习路线
+                </div>
+                </div>
+
+            <!-- 报名模块 -->
+                <div class="registration_module">
+                这里是报名模块(放q群二维码与跳转上传简历信息页面)
+                <button class="resume">去提交简历</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
